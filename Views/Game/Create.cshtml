@@ -1,18 +1,12 @@
-﻿@model TModel
+﻿@model GameReviewer.Models.Game
 
-@{
-    Layout = null;
-}
+<h1>Add A Game To The List</h1>
+<hr />
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+<form asp-action="Create" asp-controller="Game">
+    <label asp-for="Name"></label>
+    <input asp-for="Name"></input>
+    <label asp-for="Description"></label>
+    <input asp-for="Description"/>
+    <input type="submit"/>
+</form>
